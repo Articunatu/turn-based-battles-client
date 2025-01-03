@@ -48,7 +48,7 @@
 				buf += 'Partner:<br />';
 				buf += '<input class="partnerselect" /><button name="partnersubmit">Invite</button></label></p>';
 				buf += '<p><label class="checkbox"><input type="checkbox" name="private" ' + (Storage.prefs('disallowspectators') ? 'checked' : '') + ' /> <abbr title="You can still invite spectators by giving them the URL or using the /invite command">Don\'t allow spectators</abbr></label></p>';
-				buf += '<p><button class="button mainmenu1 big" name="search"><strong>Battle!</strong><br /><small>Find a random opponent</small></button></p></form></div>';
+				buf += '<p><button class="button mainmenu1 big" name="search"><strong>Battle!</strong><br /><small>MATCHMAKE</small></button></p></form></div>';
 			}
 
 			buf += '<div class="menugroup">';
@@ -704,7 +704,7 @@
 				$formatButton.replaceWith(this.renderFormats(format));
 				$teamButton.replaceWith(this.renderTeams(format, teamIndex));
 
-				$searchForm.find('button.big').html('<strong>Battle!</strong><br /><small>Find a random opponent</small>').removeClass('disabled');
+				$searchForm.find('button.big').html('<strong>Battle!</strong><br /><small>MATCHMAKE</small>').removeClass('disabled');
 				$searchForm.find('p.cancel').remove();
 			} else {
 				$formatButton.addClass('preselected')[0].disabled = true;
@@ -850,7 +850,7 @@
 			}
 			this.$('button.onlineonly').removeClass('disabled');
 
-			if (!this.searching) this.$('.mainmenu button.big').html('<strong>Battle!</strong><br /><small>Find a random opponent</small>').removeClass('disabled');
+			if (!this.searching) this.$('.mainmenu button.big').html('<strong>Battle!</strong><br /><small>MATCHMAKE</small>').removeClass('disabled');
 			var self = this;
 			this.$('button[name=format]').each(function (i, el) {
 				var val = el.value;

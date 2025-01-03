@@ -352,7 +352,7 @@ class MainMenuPanel extends PSRoomPanel<MainMenuRoom> {
 		return <TeamForm class="menugroup" onSubmit={this.submit}>
 			<button class="mainmenu1 big button" name="search">
 				<strong>Battle!</strong><br />
-				<small>Find a random opponent</small>
+				<small>MATCHMAKE</small>
 			</button>
 		</TeamForm>;
 	}

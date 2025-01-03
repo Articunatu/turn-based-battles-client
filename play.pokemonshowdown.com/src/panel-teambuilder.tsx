@@ -181,7 +181,7 @@ class TeambuilderPanel extends PSRoomPanel<TeambuilderRoom> {
 
 		return <div class="folderlist" onClick={this.selectFolder}>
 			<div class="folderlistbefore"></div>
-
+			<h1>NY KOD i laget!! lv. 154</h1>
 			<TeamFolder cur={!room.curFolder} value="">
 				<em>(all)</em>
 			</TeamFolder>
